@@ -98,13 +98,16 @@ export const NameInput: React.FC<NameInputProps> = ({ onSubmit, onCancel, onDele
             </button>
           )}
           {onDelete && (
-            <button
-              type="button"
-              onClick={onDelete}
-              className="w-full text-xs text-gray-500 hover:text-red-500 transition-colors py-2 border-t border-gray-100"
-            >
-              계정 탈퇴하기
-            </button>
+            <>
+              <hr className="border-gray-100" />
+              <button
+                type="button"
+                onClick={onDelete}
+                className="w-full text-xs text-gray-500 hover:text-red-500 transition-colors py-2"
+              >
+                계정 탈퇴하기
+              </button>
+            </>
           )}
         </div>
       </div>

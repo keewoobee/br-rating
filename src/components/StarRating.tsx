@@ -85,8 +85,8 @@ export const StarRating: React.FC<StarRatingProps> = ({ rating, onChange, size =
 
   const displayRating = hoverRating !== null ? hoverRating : rating;
 
-  const starClass = size === 'sm' ? 'w-4 h-4 sm:w-3 sm:h-3' : size === 'lg' ? 'w-5 h-5' : 'w-8 h-8 sm:w-6 sm:h-6';
-  const textClass = size === 'sm' ? 'text-[10px] sm:text-[8px] w-4 sm:w-3' : size === 'lg' ? 'text-xs w-5' : 'text-base sm:text-sm w-8 sm:w-6';
+  const starClass = size === 'sm' ? 'w-3 h-3' : size === 'lg' ? 'w-5 h-5' : 'w-8 h-8 sm:w-6 sm:h-6';
+  const textClass = size === 'sm' ? 'text-[9px] w-3' : size === 'lg' ? 'text-xs w-5' : 'text-base sm:text-sm w-8 sm:w-6';
 
   return (
     <div className={`flex items-center ${readonly ? '' : 'group'}`}>

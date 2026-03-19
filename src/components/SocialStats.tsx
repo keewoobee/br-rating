@@ -628,7 +628,7 @@ export const SocialStats: React.FC<SocialStatsProps> = ({
                         </div>
                         <div>
                           <h4 className="font-bold text-gray-900 text-lg flex items-center gap-1">
-                            {friend.name}
+                            {friend.id === auth.currentUser?.uid ? `${friend.name} (나)` : friend.name}
                           </h4>
                           <p className="text-sm text-gray-500">{friend.description}</p>
                         </div>
@@ -663,7 +663,7 @@ export const SocialStats: React.FC<SocialStatsProps> = ({
                   {selectedFriend.avatar}
                 </div>
                 <h2 className="text-2xl font-black text-gray-900 flex items-center justify-center gap-1">
-                  {selectedFriend.name}
+                  {selectedFriend.id === auth.currentUser?.uid ? `${selectedFriend.name} (나)` : selectedFriend.name}
                 </h2>
                 <p className="text-gray-500 mt-1 mb-4">{selectedFriend.description}</p>
                 <button
@@ -671,7 +671,7 @@ export const SocialStats: React.FC<SocialStatsProps> = ({
                   className="bg-br-blue hover:bg-br-blue/90 text-white font-bold py-2 px-6 rounded-full shadow-sm transition-all text-sm flex items-center gap-2 mx-auto"
                 >
                   <PieChart className="w-4 h-4" />
-                  {selectedFriend.name}의 통계 보러가기
+                  {selectedFriend.id === auth.currentUser?.uid ? '내' : selectedFriend.name + '의'} 통계 보러가기
                 </button>
               </div>
             </div>
@@ -795,8 +795,8 @@ export const SocialStats: React.FC<SocialStatsProps> = ({
 
       {/* Flavor Comments Modal */}
       {selectedFlavor && (
-        <div className="fixed inset-0 z-50 flex items-end justify-center sm:items-center sm:p-4 bg-black/60 backdrop-blur-sm">
-          <div className="bg-[#141414] w-full max-w-[430px] sm:max-w-3xl max-h-[90vh] sm:max-h-[85vh] rounded-t-3xl sm:rounded-3xl shadow-2xl flex flex-col overflow-hidden border border-white/10 pb-[env(safe-area-inset-bottom)]">
+        <div className="fixed inset-0 z-50 flex items-end justify-center pb-16 bg-black/60 backdrop-blur-sm">
+          <div className="bg-[#141414] w-full max-w-[430px] max-h-[80vh] rounded-t-3xl shadow-2xl flex flex-col overflow-hidden border border-white/10">
             <div className="p-6 border-b border-white/10 flex items-center justify-between bg-[#1a1a1a]">
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center overflow-hidden">
@@ -833,7 +833,7 @@ export const SocialStats: React.FC<SocialStatsProps> = ({
               </button>
             </div>
             
-            <div className="flex-1 overflow-y-auto overflow-x-hidden p-6">
+            <div className="flex-1 overflow-y-auto overflow-x-hidden p-6 pb-12">
               {isLoadingComments ? (
                 <div className="flex flex-col items-center justify-center h-40 text-gray-400">
                   <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-br-pink mb-4"></div>
@@ -971,7 +971,7 @@ export const SocialStats: React.FC<SocialStatsProps> = ({
                       아직 작성된 코멘트가 없습니다.
                     </div>
                   ) : (
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div className="grid grid-cols-1 gap-4">
                       {flavorComments.map((comment, idx) => (
                         <div key={idx} className="bg-[#1a1a1a] rounded-2xl p-5 border border-white/5 flex flex-col">
                           <div className="flex items-center justify-between mb-4">

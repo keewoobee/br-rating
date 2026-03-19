@@ -46,11 +46,12 @@ export const MenuCard: React.FC<MenuCardProps> = ({ item, rating, comment, onRat
       >
         <div className="w-14 h-14 sm:w-16 sm:h-16 mb-2 flex items-center justify-center relative transition-colors shrink-0">
           {item.imageUrl ? (
-            <img 
-              src={item.imageUrl} 
-              alt={item.name} 
+            <img
+              src={item.imageUrl}
+              alt={item.name}
               className="w-full h-full object-contain p-1.5 group-hover:scale-110 transition-transform duration-500"
               referrerPolicy="no-referrer"
+              loading="lazy"
             />
           ) : (
             <div className="text-gray-400 text-[9px] font-medium">No Image</div>
@@ -80,11 +81,12 @@ export const MenuCard: React.FC<MenuCardProps> = ({ item, rating, comment, onRat
     <div className="bg-white rounded-2xl shadow-sm border-2 border-transparent hover:border-br-pink-light p-5 flex flex-col h-full transition-all duration-300 hover:shadow-xl group">
       <div className="w-full h-48 mb-5 flex items-center justify-center relative transition-colors">
         {item.imageUrl ? (
-          <img 
-            src={item.imageUrl} 
-            alt={item.name} 
+          <img
+            src={item.imageUrl}
+            alt={item.name}
             className="w-full h-full object-contain p-4 group-hover:scale-110 transition-transform duration-500"
             referrerPolicy="no-referrer"
+            loading="lazy"
           />
         ) : (
           <div className="text-gray-400 text-sm font-medium">No Image</div>
