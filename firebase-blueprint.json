@@ -1,0 +1,41 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "User profile and their ice cream ratings",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "User's nickname"
+        },
+        "avatar": {
+          "type": "string",
+          "description": "User's emoji avatar"
+        },
+        "ratings": {
+          "type": "object",
+          "description": "Map of menu ID (string) to rating (number)"
+        },
+        "comments": {
+          "type": "object",
+          "description": "Map of menu ID (string) to comment (string)"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Last updated timestamp"
+        }
+      },
+      "required": ["name", "avatar", "ratings", "comments", "updatedAt"]
+    }
+  },
+  "firestore": {
+    "users/{userId}": {
+      "schema": {
+        "$ref": "#/entities/User"
+      },
+      "description": "Stores user profiles and their ratings"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-br-pink: #FF2A70;
+  --color-br-pink-light: #FFF0F4;
+  --color-br-blue: #00529B;
+  --color-br-blue-light: #F0F6FF;
+  --font-sans: "Noto Sans KR", ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  display: flex;
+  justify-content: center;
+  background: #F8F9FA;
+}
+
+#root {
+  width: 100%;
+  max-width: 430px;
+  min-height: 100dvh;
+  background: #F8F9FA;
+  position: relative;
+}
+
+.chart-container,
+.chart-container *,
+.recharts-wrapper,
+.recharts-wrapper *,
+.recharts-surface,
+.recharts-surface * {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.chart-container *:focus,
+.chart-container *:focus-visible {
+  outline: none !important;
+}
+
+.recharts-bar-rectangle:focus,
+.recharts-bar-rectangle:focus-visible {
+  outline: none !important;
+}

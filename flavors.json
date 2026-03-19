@@ -1,0 +1,2290 @@
+[
+  {
+    "id": 100,
+    "name": "더블 바닐라 초콜릿",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2018"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/e6545d1f60e4df3d5c67238868b230d9.jpg",
+    "description": "2018년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 101,
+    "name": "트리플 치즈 러브",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2018"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/0af91a5140f23b5a31349631200206f2.jpg",
+    "description": "2018년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 102,
+    "name": "츄파츕스 스트로베리 앤 크림",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2018"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/3628eeda8cacdf052271261df4a830da.jpg",
+    "description": "2018년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 103,
+    "name": "아쿠르트 샤베트",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2018"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/536fa7830f114f1f949ff27405e52a57.jpg",
+    "description": "2018년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 104,
+    "name": "미니미니 미니언즈",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2018"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/c0f8f800d7a15eccc426021ea462e124.jpg",
+    "description": "2018년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 105,
+    "name": "체리쥬빌레31",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2018"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/038c010eb2d7aab7e09f77236eaa9e1a.jpg",
+    "description": "2018년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 106,
+    "name": "핑크퐁 상어가족",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2018"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/a209f9d632335cf439427092a08e405e.jpg",
+    "description": "2018년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 107,
+    "name": "베리 스윗 바이올렛",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2018"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/0475d304c29a4f74678ada34df7018e9.jpg",
+    "description": "2018년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 108,
+    "name": "쫀떡궁합",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2018"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/4bed79da50c8239cad8fa6e41cc70659.jpg",
+    "description": "2018년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 109,
+    "name": "몬스터 마시멜로",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2018"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/da77db29d5a02266240c7363a4c5f94b.jpg",
+    "description": "2018년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 110,
+    "name": "오레오 쿠키 앤 카라멜",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2018"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/5abf3f4756b4e6a73aa29a769b265561.jpg",
+    "description": "2018년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 111,
+    "name": "누가 크런치",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2018"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/e207c8524bb34f1fb826fe6e446a2d56.jpg",
+    "description": "2018년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 112,
+    "name": "꿀꿀허니",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2019"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/6dd1aa5d80a23b7970a84cfb1c7b74ab.jpg",
+    "description": "2019년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 113,
+    "name": "허쉬 마카다미아 넛",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2019"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/b3ec07901a76dbb3e15dfe10dc339ed4.jpg",
+    "description": "2019년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 114,
+    "name": "베리 그래놀라",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2019"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/37f49d8cdeb6a2441cc29b4e42969f81.jpg",
+    "description": "2019년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 115,
+    "name": "스트로베리 아보카도",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2019"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/3ee90a38ebe2c522cb95c3382d8c949c.jpg",
+    "description": "2019년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 116,
+    "name": "아이스 죠리퐁",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2019"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/52623c6ce0c50a76e6dd7b67ab53bacf.jpg",
+    "description": "2019년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 117,
+    "name": "블랙 소르베",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2019"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/2dd8db12679a75a7c087a3bac4f29084.jpg",
+    "description": "2019년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 118,
+    "name": "핑크 스타",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2019"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/222ae765355a115598eb149313bab296.jpg",
+    "description": "2019년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 119,
+    "name": "심슨에 반하나",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2019"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/2c0d3cd69816d8ea5be15f41990686f3.jpg",
+    "description": "2019년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 120,
+    "name": "쌀떡궁합",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2019"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/8c4a74f919739626140ff833acf009e3.jpg",
+    "description": "2019년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 121,
+    "name": "아빠는 딸바봉",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2019"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/c2ae9d4d8a3251525254bd09d634f1f2.jpg",
+    "description": "2019년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 122,
+    "name": "오레오 쿠키 앤 크림치즈",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2019"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/13dbeb9fe6c7e616e9d611e8da457235.jpg",
+    "description": "2019년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 123,
+    "name": "아이스 초코파이 정",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2019"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/72777ae30858a41b88107fdf66e0e857.jpg",
+    "description": "2019년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 124,
+    "name": "우리끼리",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2020"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/74282ea4c495b45b9846c29826b9db70.jpg",
+    "description": "2020년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 125,
+    "name": "아이스 킷캣",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2020"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/bf783fe93c0a54e0ac81d6b8ca45b497.jpg",
+    "description": "2020년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 126,
+    "name": "로투스 비스코프",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2020"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/43a08137fa6465645a64fcabeb8ac83a.jpg",
+    "description": "2020년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 127,
+    "name": "아이스 바나나킥",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2020"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/6d53d26cb9d52c8bff8e89d413971072.jpg",
+    "description": "2020년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 128,
+    "name": "판타스틱 트롤",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2020"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/4e1be0e7ae4eac5fc251fe58246cbe88.jpg",
+    "description": "2020년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 129,
+    "name": "아몬드 봉봉봉",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2020"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/37524df7eb61e87c6c67679040952caa.jpg",
+    "description": "2020년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 130,
+    "name": "펭수 아슈크림",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2020"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/fb0d19a400be455196fcba6cda053d84.jpg",
+    "description": "2020년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 131,
+    "name": "보라보라",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2020"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/236a0c1bf1a15b0f3c735b5ecbd49e9a.jpg",
+    "description": "2020년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 132,
+    "name": "매시업스 시리얼",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2020"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/32ac2b655e0faca683bf077b1d26cf53.jpg",
+    "description": "2020년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 133,
+    "name": "미찐 감자",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2020"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/0b9fa210a22163e666c4521c1a85dad5.jpg",
+    "description": "2020년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 134,
+    "name": "아이스 호떡",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2020"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/ca023328c04f69506e1932445039d63b.jpg",
+    "description": "2020년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 135,
+    "name": "아이스 촉촉한 초코칩",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2020"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/0c8febe319a245a6a6cb6b7b991dd76a.jpg",
+    "description": "2020년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 136,
+    "name": "우유속에 끼인 소보로 &#40;우.낀.소&#41;",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2021"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/b1f44892337418001df249d27ff2e5f3.jpg",
+    "description": "2021년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 137,
+    "name": "아이스 밀카 초콜릿",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2021"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/f7f73b8ae2ed571c8dae02d3e9ada2f5.jpg",
+    "description": "2021년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 138,
+    "name": "아이스 허니버터 아몬드",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2021"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/3a4091ae95e0c81677e29671134b9523.jpg",
+    "description": "2021년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 139,
+    "name": "민트 초코 봉봉",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2021"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/ab1b884a02073e33d8948abbd3a8dfb1.jpg",
+    "description": "2021년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 140,
+    "name": "아이스 홈런볼",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2021"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/a53f91747713a8634d515a269f24de05.jpg",
+    "description": "2021년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 141,
+    "name": "오버더 레인보우 샤베트",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2021"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/cd5984e5a56098ac83e905e1ac0844b4.jpg",
+    "description": "2021년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 142,
+    "name": "꿀바망",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2021"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/e8fbc0b80e4bfa75286b8e2ee426bb94.jpg",
+    "description": "2021년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 143,
+    "name": "아이스 꼬북칩",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2021"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/f48db62359ad52ef1a04bc9c6b806c4d.jpg",
+    "description": "2021년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 144,
+    "name": "찰떡콩떡",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2021"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/25b6751fafb36673e6c2ed87bee989ec.jpg",
+    "description": "2021년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 145,
+    "name": "치즈 고구마구마",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2021"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/0e86eb80a29d61a49d35d80c12bf0182.jpg",
+    "description": "2021년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 146,
+    "name": "치즈나무숲",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2021"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/db9e4e17f3da65cf579a81ad04ae1a48.jpg",
+    "description": "2021년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 147,
+    "name": "아이스 고디바 초콜릿",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2021"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/bb857a9592de10fc60aebcaa8d3cdd23.jpg",
+    "description": "2021년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 148,
+    "name": "기운 센 아이스 콘푸로스트",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2022"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/cd8daa606e934c0360cb6e90bd0460d2.jpg",
+    "description": "2022년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 149,
+    "name": "아이스 로아커",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2022"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/3c4f1a11cf14e6ba0c1c44e0143cd03d.jpg",
+    "description": "2022년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 150,
+    "name": "오레오 쿠키 앤 스트로베리",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2022"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/7431391259803c22457c617c05b23cfe.jpg",
+    "description": "2022년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 151,
+    "name": "사랑에 빠진 외계인",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2022"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/22b682eb53c72e664ca72168e2e73edb.jpg",
+    "description": "2022년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 152,
+    "name": "피카피카 피카츄",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2022"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/15f9523694a257fdd587e7793f14e3a1.jpg",
+    "description": "2022년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 153,
+    "name": "너로 정했다! 이브이",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2022"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/586928da2d1bf7dd8befe4bcf9504da2.jpg",
+    "description": "2022년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 154,
+    "name": "마우나로아 마카다미아",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2022"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/ca4ae61e1ed5048adf7b13c18a9d0169.jpg",
+    "description": "2022년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 155,
+    "name": "아이스 초당 옥수수",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2022"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/846ea6694d12beb2b3477687e8341b3b.jpg",
+    "description": "2022년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 156,
+    "name": "내가 아인슈페너?!",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2022"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/968926102d02724fd487e4c61c0b931d.jpg",
+    "description": "2022년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 157,
+    "name": "외계인의 바나나킥",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2022"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/76d30385c72fe332f38c3b8bc44e37fb.jpg",
+    "description": "2022년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 158,
+    "name": "핑크스푼비긴즈",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2022"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/aa6bcaec2fc71786aad78b05a993c1c6.jpg",
+    "description": "2022년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 159,
+    "name": "아이스 허쉬 앤 리세스",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2022"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/9ca1199e5f935fac87760b60d9b29c63.jpg",
+    "description": "2022년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 160,
+    "name": "벅스 버니버니 당근당근",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2023"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/d3f6dcd61f7a5aa00569d4aea73fc276.jpg",
+    "description": "2023년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 161,
+    "name": "아이스 기가델리 초콜릿",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2023"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/0cf86a3b896eda151f5096e78da98242.jpg",
+    "description": "2023년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 162,
+    "name": "러브미",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2023"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/221eb035ba12a7220d35ad8ae1c4ac72.jpg",
+    "description": "2023년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 163,
+    "name": "딸기 연유 퐁당",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2023"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/0ba24a92c17a2c27306f06cdf03bcb5a.jpg",
+    "description": "2023년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 164,
+    "name": "복숭아로 피치올려",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2023"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/dab4342764cf60afed2a4baf30d40aa5.jpg",
+    "description": "2023년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 165,
+    "name": "구름 속 시나모롤",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2023"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/f65ef36400abf52678d5907cf91b6977.jpg",
+    "description": "2023년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 166,
+    "name": "시카고 팝콘",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2023"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/5d9919145dc713a9173dc044743e4988.jpg",
+    "description": "2023년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 167,
+    "name": "라이언 망고 마카롱",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2023"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/6131249603c2f09e6f3ccd0104d75086.jpg",
+    "description": "2023년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 168,
+    "name": "아이스 노티드 우유 생크림",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2023"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/0ca6b4dd68753700a804895e7416bba4.png",
+    "description": "2023년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 169,
+    "name": "초코 퐁당 쿠키런",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2023"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/b82195da8f7ae11fa1ce8164f577fa0a.png",
+    "description": "2023년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 170,
+    "name": "초코, 우리 이제 헤이즐넛",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2023"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/9c4bd861eb372a056db535f6dd30c88a.jpg",
+    "description": "2023년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 171,
+    "name": "나는 딸기치오",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2023"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/59f422e827575adcebada41cd047558e.jpg",
+    "description": "2023년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 172,
+    "name": "도라에몽의 팥붕! 슈붕",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2023"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/d09aa0a5dcd3845ef806c60e1b6133a6.jpg",
+    "description": "2023년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 173,
+    "name": "고디바 다크 크런치",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2023"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/a780948fae58f1256f5ea8dfebff0e05.jpg",
+    "description": "2023년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 174,
+    "name": "황치즈 드래곤 볼",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2024"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/4b8f997134cd5b0eda0eeb709474beaf.jpg",
+    "description": "2024년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 175,
+    "name": "바삭한 쫀꾸렛",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2024"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/1d69ce7e3ff684726bbb4fc2e2f31280.jpg",
+    "description": "2024년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 176,
+    "name": "탕탕! 스트로베리",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2024"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/6de6fbbf36e0b4fb7f1756e2fa8ce856.jpg",
+    "description": "2024년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 177,
+    "name": "아이스 도쿄바나나",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2024"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/6a7c50ed814bd5188603ea31cffa0b07.jpg",
+    "description": "2024년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 178,
+    "name": "이상한 나라의 슈팅스타",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2024"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/9aebe3d625f20ffadb2675f0ae24daf4.jpg",
+    "description": "2024년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 179,
+    "name": "우주 라이크 봉봉",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2024"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/91af0910dba74500ef7353c10bc61ad6.png",
+    "description": "2024년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 180,
+    "name": "블루 서퍼 비치",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2024"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/8a893a42a60109e89fb9ee39e728d596.png",
+    "description": "2024년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 181,
+    "name": "피치PANG 망고PANG",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2024"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/0457e604adc6249c786c6a50dbfdd200.png",
+    "description": "2024년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 182,
+    "name": "우석이도 외계인",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2024"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/cd07876cf27e1311344c37ad7bcadacc.png",
+    "description": "2024년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 183,
+    "name": "숭아야, 그릭다....",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2024"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/be599064763dafcd2abcdc057dd14d85.png",
+    "description": "2024년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 184,
+    "name": "치토스 밀크쉐이크 아이스크림",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2024"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/89507eab91207c43e790741563d0387f.png",
+    "description": "2024년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 185,
+    "name": "키세스 브라우니 초콜릿",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2024"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/68f96de3a18693b46d37c5e91355843c.png",
+    "description": "2024년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 186,
+    "name": "춘식이의 고구마얌!",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2025"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/dcb3a53eaf20ab21a3233f495561f6a0.png",
+    "description": "2025년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 187,
+    "name": "아이스 초코 도쿄바나나",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2025"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/888aa0435ec770563c22524a02b2ad17.png",
+    "description": "2025년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 188,
+    "name": "말랑 딸기 찹쌀떡",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2025"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/11a73538342122d9d7c392a9616a8b59.png",
+    "description": "2025년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 189,
+    "name": "아이스 그린티 킷캣",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2025"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/5196b873a46d413b72665eaaa584d661.png",
+    "description": "2025년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 190,
+    "name": "봄날의 곰을 좋아하세요?",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2025"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/2e35bd8971cdfa94207298feb05420b5.png",
+    "description": "2025년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 191,
+    "name": "카페오레 초코 크런치",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2025"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/6f7bbdbe0b87639f7b4086b018529139.png",
+    "description": "2025년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 192,
+    "name": "애망빙",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2025"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/5137d386c0dd249770cb86bcb9838d45.png",
+    "description": "2025년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 193,
+    "name": "블루 바나나 브륄레",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2025"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/87354b2b13b50429e93059833134cf49.png",
+    "description": "2025년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 194,
+    "name": "위대한 비쵸비",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2025"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/54d138da4091a572845cb65d99d1b0eb.png",
+    "description": "2025년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 195,
+    "name": "말차다미아",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2025"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/ebb08a4a5512fa49d62a2143c2968d0d.png",
+    "description": "2025년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 196,
+    "name": "솔티키 나 너 초코",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2025"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/29a9ad6ca5e7ab1391853bd814bc676f.png",
+    "description": "2025년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 197,
+    "name": "치즈가 브러우니?",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2025"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/c9d03cfcc4348fbf68f9b3b1f2a9b3de.png",
+    "description": "2025년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 198,
+    "name": "골든 프랄린 버터",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2025"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/8732c1dfc2448cea0886bf9200b2f372.png",
+    "description": "2025년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 199,
+    "name": "초콜릿 쿠키 스모어",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2025"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/3c4126478cc7a1eb74dd658c91ff2d16.png",
+    "description": "2025년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 200,
+    "name": "베리 굿",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2026"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/843ca147141147c4a4f99491fb0bc4bc.png",
+    "description": "2026년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 201,
+    "name": "진정한 쫀꾸렛",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2026"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/851da530633910bc6caf5d6ee94e09fa.png",
+    "description": "2026년 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 208,
+    "name": "솔티끼 나 너 초코♥",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2025"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/29a9ad6ca5e7ab1391853bd814bc676f.png",
+    "description": "2025년 10월 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  },
+  {
+    "id": 209,
+    "name": "말차다미아",
+    "category": "이달의 맛",
+    "tags": [
+      "이달의맛",
+      "2025"
+    ],
+    "kcal": 250,
+    "imageUrl": "https://www.baskinrobbins.co.kr/upload/product/monthBastHistory/ebb08a4a5512fa49d62a2143c2968d0d.png",
+    "description": "2025년 10월 이달의 맛",
+    "components": [],
+    "nutrition": {
+      "1회 제공량(g)": "115",
+      "열량(kcal)": "250",
+      "당류(g)": "20",
+      "단백질(g)": "4",
+      "포화지방(g)": "8",
+      "나트륨(mg)": "100",
+      "알레르기 성분": "우유"
+    }
+  }
+]

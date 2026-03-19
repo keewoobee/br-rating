@@ -1,0 +1,5 @@
+{
+  "name": "BR31 Flavor Archive",
+  "description": "A data-driven Baskin Robbins flavor analysis engine with 0.5-star ratings and statistical visualization.",
+  "requestFramePermissions": []
+}

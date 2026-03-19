@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1200, initial-scale=1">
+<title>mockup</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Noto Sans KR',system-ui,-apple-system,sans-serif; background:#1a1a2e; display:flex; justify-content:center; gap:18px; padding:20px; }
+.phone { width:320px; height:640px; background:#f5f5f5; position:relative; overflow:hidden; border-radius:24px; box-shadow:0 16px 48px rgba(0,0,0,0.3); border:5px solid #333; }
+.label { position:absolute; top:8px; left:50%; transform:translateX(-50%); padding:4px 14px; border-radius:16px; font-size:10px; font-weight:bold; z-index:99; color:white; white-space:nowrap; }
+.la { background:#6366f1; }
+.lb { background:#ec4899; }
+.lc { background:#06b6d4; }
+.hdr { background:white; padding:12px; text-align:center; border-bottom:1px solid #eee; font-size:13px; font-weight:bold; color:#333; }
+.cnt { padding:10px 14px; overflow-y:auto; }
+.sec-title { text-align:center; padding:12px 0 10px; }
+.sec-title h3 { font-size:14px; font-weight:bold; color:#00529B; }
+.sec-title p { font-size:8px; color:#aaa; margin-top:2px; }
+.rc { background:white; border-radius:12px; padding:11px; margin-bottom:8px; box-shadow:0 1px 4px rgba(0,0,0,0.05); display:flex; align-items:center; gap:8px; }
+.ri { width:28px; height:28px; border-radius:50%; background:#f0f6ff; display:flex; align-items:center; justify-content:center; font-size:11px; flex-shrink:0; color:#00529B; font-weight:bold; }
+.rn { font-size:11px; font-weight:bold; color:#333; }
+.rs { font-size:8px; color:#999; }
+.rr { margin-left:auto; font-size:12px; font-weight:bold; color:#00529B; }
+.bn { position:absolute; bottom:0; left:0; right:0; height:60px; background:white; border-top:1px solid #eee; display:flex; align-items:center; justify-content:space-around; padding-bottom:8px; }
+.ni { display:flex; flex-direction:column; align-items:center; gap:2px; font-size:8px; font-weight:bold; color:#9ca3af; }
+.ni.act { color:#a855f7; }
+
+/* A: pill filled */
+.ta { position:sticky; top:0; z-index:40; background:white; padding:8px 12px 10px; border-bottom:1px solid #eee; }
+.ta input { width:100%; padding:7px 10px; border:1px solid #e5e7eb; border-radius:10px; background:#f9fafb; font-size:10px; outline:none; margin-bottom:7px; }
+.ta .r { display:flex; gap:5px; }
+.ta .b { flex:1; padding:8px 4px; border-radius:999px; font-size:10.5px; font-weight:bold; border:none; cursor:pointer; text-align:center; }
+.ta .ba { background:#00529B; color:white; box-shadow:0 3px 10px rgba(0,82,155,0.3); }
+.ta .bi { background:#f3f4f6; color:#6b7280; }
+
+/* B: underline */
+.tb { position:sticky; top:0; z-index:40; background:white; padding:8px 12px 0; border-bottom:1px solid #eee; }
+.tb input { width:100%; padding:7px 10px; border:1px solid #e5e7eb; border-radius:10px; background:#f9fafb; font-size:10px; outline:none; margin-bottom:8px; }
+.tb .r { display:flex; }
+.tb .b { flex:1; padding:9px 4px 10px; font-size:10.5px; font-weight:bold; border:none; cursor:pointer; text-align:center; background:transparent; position:relative; }
+.tb .ba { color:#FF2A70; }
+.tb .ba::after { content:''; position:absolute; bottom:0; left:20%; right:20%; height:3px; background:#FF2A70; border-radius:2px; }
+.tb .bi { color:#9ca3af; }
+
+/* C: outline chip */
+.tc { position:sticky; top:0; z-index:40; background:white; padding:8px 12px 10px; border-bottom:1px solid #eee; }
+.tc input { width:100%; padding:7px 10px; border:1px solid #e5e7eb; border-radius:10px; background:#f9fafb; font-size:10px; outline:none; margin-bottom:7px; }
+.tc .r { display:flex; gap:5px; }
+.tc .b { flex:1; padding:7px 4px; border-radius:10px; font-size:10px; font-weight:bold; border:2px solid transparent; cursor:pointer; text-align:center; }
+.tc .ba { background:#EFF6FF; color:#00529B; border-color:#00529B; }
+.tc .bi { background:#f9fafb; color:#6b7280; border-color:#e5e7eb; }
+</style>
+</head>
+<body>
+
+<div class="phone">
+  <div class="label la">A. Pill Color</div>
+  <div class="hdr">Community</div>
+  <div class="ta">
+    <input type="text" placeholder="Search..." />
+    <div class="r">
+      <button class="b ba">Global Ranking</button>
+      <button class="b bi">Friend Taste</button>
+      <button class="b bi">Awards</button>
+    </div>
+  </div>
+  <div class="cnt" style="height:430px;">
+    <div class="sec-title"><h3>Global Ranking</h3><p>Based on all user ratings</p></div>
+    <div class="rc"><div class="ri">1</div><div><div class="rn">Mom is Alien</div><div class="rs">Avg 4.8 / 120</div></div><div class="rr">#1</div></div>
+    <div class="rc"><div class="ri">2</div><div><div class="rn">Pistachio Almond</div><div class="rs">Avg 4.6 / 98</div></div><div class="rr">#2</div></div>
+    <div class="rc"><div class="ri">3</div><div><div class="rn">Vanilla</div><div class="rs">Avg 4.5 / 145</div></div><div class="rr">#3</div></div>
+    <div class="rc"><div class="ri">4</div><div><div class="rn">Mint Choco Chip</div><div class="rs">Avg 4.3 / 132</div></div><div class="rr">#4</div></div>
+    <div class="rc"><div class="ri">5</div><div><div class="rn">Shooting Star</div><div class="rs">Avg 4.2 / 87</div></div><div class="rr">#5</div></div>
+  </div>
+  <div class="bn"><div class="ni">IceCream</div><div class="ni">Analytics</div><div class="ni act">Community</div></div>
+</div>
+
+<div class="phone">
+  <div class="label lb">B. Underline Tab</div>
+  <div class="hdr">Community</div>
+  <div class="tb">
+    <input type="text" placeholder="Search..." />
+    <div class="r">
+      <button class="b ba">Global Ranking</button>
+      <button class="b bi">Friend Taste</button>
+      <button class="b bi">Awards</button>
+    </div>
+  </div>
+  <div class="cnt" style="height:430px;">
+    <div class="sec-title"><h3>Global Ranking</h3><p>Based on all user ratings</p></div>
+    <div class="rc"><div class="ri">1</div><div><div class="rn">Mom is Alien</div><div class="rs">Avg 4.8 / 120</div></div><div class="rr">#1</div></div>
+    <div class="rc"><div class="ri">2</div><div><div class="rn">Pistachio Almond</div><div class="rs">Avg 4.6 / 98</div></div><div class="rr">#2</div></div>
+    <div class="rc"><div class="ri">3</div><div><div class="rn">Vanilla</div><div class="rs">Avg 4.5 / 145</div></div><div class="rr">#3</div></div>
+    <div class="rc"><div class="ri">4</div><div><div class="rn">Mint Choco Chip</div><div class="rs">Avg 4.3 / 132</div></div><div class="rr">#4</div></div>
+    <div class="rc"><div class="ri">5</div><div><div class="rn">Shooting Star</div><div class="rs">Avg 4.2 / 87</div></div><div class="rr">#5</div></div>
+  </div>
+  <div class="bn"><div class="ni">IceCream</div><div class="ni">Analytics</div><div class="ni act">Community</div></div>
+</div>
+
+<div class="phone">
+  <div class="label lc">C. Outline Chip</div>
+  <div class="hdr">Community</div>
+  <div class="tc">
+    <input type="text" placeholder="Search..." />
+    <div class="r">
+      <button class="b ba">Global Ranking</button>
+      <button class="b bi">Friend Taste</button>
+      <button class="b bi">Awards</button>
+    </div>
+  </div>
+  <div class="cnt" style="height:430px;">
+    <div class="sec-title"><h3>Global Ranking</h3><p>Based on all user ratings</p></div>
+    <div class="rc"><div class="ri">1</div><div><div class="rn">Mom is Alien</div><div class="rs">Avg 4.8 / 120</div></div><div class="rr">#1</div></div>
+    <div class="rc"><div class="ri">2</div><div><div class="rn">Pistachio Almond</div><div class="rs">Avg 4.6 / 98</div></div><div class="rr">#2</div></div>
+    <div class="rc"><div class="ri">3</div><div><div class="rn">Vanilla</div><div class="rs">Avg 4.5 / 145</div></div><div class="rr">#3</div></div>
+    <div class="rc"><div class="ri">4</div><div><div class="rn">Mint Choco Chip</div><div class="rs">Avg 4.3 / 132</div></div><div class="rr">#4</div></div>
+    <div class="rc"><div class="ri">5</div><div><div class="rn">Shooting Star</div><div class="rs">Avg 4.2 / 87</div></div><div class="rr">#5</div></div>
+  </div>
+  <div class="bn"><div class="ni">IceCream</div><div class="ni">Analytics</div><div class="ni act">Community</div></div>
+</div>
+
+</body>
+</html>
