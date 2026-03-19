@@ -407,7 +407,7 @@ export default function App() {
         initialAvatar={userAvatar || '🍦'} 
         error={profileError}
           onDelete={isProfileSetupComplete ? handleDeleteAccount : undefined}
-        onLogout={handleLogout}
+        onLogout={isProfileSetupComplete ? handleLogout : undefined}
       />
     );
   }
