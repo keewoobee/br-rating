@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect, useMemo, useRef } from 'react';
 import { menuData, getTier, MenuItem } from './data';
 import { MenuCard } from './components/MenuCard';
 import { Analytics } from './components/Analytics';
@@ -42,6 +42,7 @@ export default function App() {
   const [socialTab, setSocialTab] = useState<'global' | 'friends' | 'awards'>('global');
   const [socialSearchQuery, setSocialSearchQuery] = useState('');
   const [socialHasFriendSelected, setSocialHasFriendSelected] = useState(false);
+  const clearSelectedFriendRef = useRef<(() => void) | null>(null);
   const [isTierModalOpen, setIsTierModalOpen] = useState(false);
   const [isAuthReady, setIsAuthReady] = useState(false);
   const [isEditingProfile, setIsEditingProfile] = useState(false);
@@ -368,6 +369,7 @@ export default function App() {
       else if (isFeedbackOpen) setIsFeedbackOpen(false);
       else if (isTierModalOpen) setIsTierModalOpen(false);
       else if (isEditingProfile) setIsEditingProfile(false);
+      else if (socialHasFriendSelected) { clearSelectedFriendRef.current?.(); setSocialHasFriendSelected(false); }
       else if (viewingFriend) { setViewingFriend(null); setView('social'); setSocialHasFriendSelected(false); }
       else if (event.state?.view) { setView(event.state.view); setSocialHasFriendSelected(false); }
       else if (view !== 'list') { setView('list'); setSocialHasFriendSelected(false); }
@@ -375,7 +377,7 @@ export default function App() {
 
     window.addEventListener('popstate', handlePopState);
     return () => window.removeEventListener('popstate', handlePopState);
-  }, [isTierModalOpen, isEditingProfile, viewingFriend, view, selectedItem, isFeedbackOpen]);
+  }, [isTierModalOpen, isEditingProfile, viewingFriend, view, selectedItem, isFeedbackOpen, socialHasFriendSelected]);
 
   const handleViewFriendStats = (friend: FriendType) => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -620,6 +622,7 @@ export default function App() {
               searchQuery={socialSearchQuery}
               onSearchQueryChange={setSocialSearchQuery}
               onSelectedFriendChange={(f) => setSocialHasFriendSelected(!!f)}
+              clearSelectedFriendRef={clearSelectedFriendRef}
             />
             {!socialHasFriendSelected && (
               <div className="fixed bottom-28 left-1/2 -translate-x-1/2 z-40 w-[80%] max-w-sm space-y-2">

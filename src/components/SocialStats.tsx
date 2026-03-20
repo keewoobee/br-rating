@@ -82,6 +82,7 @@ interface SocialStatsProps {
   searchQuery: string;
   onSearchQueryChange: (q: string) => void;
   onSelectedFriendChange?: (friend: FriendType | null) => void;
+  clearSelectedFriendRef?: React.MutableRefObject<(() => void) | null>;
 }
 
 // Mock Data Generators removed
@@ -102,13 +103,21 @@ export const SocialStats: React.FC<SocialStatsProps> = ({
   searchQuery,
   onSearchQueryChange,
   onSelectedFriendChange,
+  clearSelectedFriendRef,
 }) => {
   const setSearchQuery = onSearchQueryChange;
   const [selectedFriend, _setSelectedFriend] = useState<FriendType | null>(null);
   const setSelectedFriend = (friend: FriendType | null) => {
+    if (friend !== null) history.pushState({ socialFriendDetail: true }, '');
     _setSelectedFriend(friend);
     onSelectedFriendChange?.(friend);
   };
+
+  useEffect(() => {
+    if (clearSelectedFriendRef) {
+      clearSelectedFriendRef.current = () => _setSelectedFriend(null);
+    }
+  }, [clearSelectedFriendRef]);
   const [selectedFlavor, setSelectedFlavor] = useState<MenuItem | null>(null);
 
   useEffect(() => {
