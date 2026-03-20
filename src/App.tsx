@@ -13,7 +13,7 @@ import { Feedback } from './components/Feedback';
 import { AdminFeedback } from './components/AdminFeedback';
 import { PieChart, List, Users, ArrowLeft, LogOut, Settings, Info, Trash2, X, MessageSquare, IceCreamCone, BarChart3, ArrowUpDown, Search } from 'lucide-react';
 import { auth, db } from './firebase';
-import { onAuthStateChanged, signOut, deleteUser, reauthenticateWithPopup, GoogleAuthProvider } from 'firebase/auth';
+import { onAuthStateChanged, signOut, deleteUser, reauthenticateWithCredential, GoogleAuthProvider } from 'firebase/auth';
 import { doc, getDoc, setDoc, onSnapshot, serverTimestamp, collection, query, where, getDocs, deleteDoc, deleteField, updateDoc } from 'firebase/firestore';
 
 function getJosa(name: string) {
@@ -329,11 +329,45 @@ export default function App() {
     } catch (error: any) {
       if (error.code === 'auth/requires-recent-login') {
         try {
-          // Re-authenticate
-          const provider = new GoogleAuthProvider();
-          await reauthenticateWithPopup(auth.currentUser, provider);
-          // Retry deletion
-          await handleDeleteAccount();
+          // 로그인과 동일한 커스텀 OAuth 플로우로 재인증
+          const res = await fetch('/api/auth/google/url');
+          const { url } = await res.json();
+
+          await new Promise<void>((resolve, reject) => {
+            const popup = window.open(url, 'google-reauth', 'width=500,height=600');
+
+            const handleMessage = async (event: MessageEvent) => {
+              if (event.data?.type !== 'OAUTH_AUTH_SUCCESS') return;
+              window.removeEventListener('message', handleMessage);
+              clearInterval(checkClosed);
+              try {
+                const { payload } = event.data;
+                if (payload?.idToken && auth.currentUser) {
+                  const credential = GoogleAuthProvider.credential(payload.idToken);
+                  await reauthenticateWithCredential(auth.currentUser, credential);
+                }
+                resolve();
+              } catch (e) {
+                reject(e);
+              }
+            };
+
+            const checkClosed = setInterval(() => {
+              if (popup?.closed) {
+                clearInterval(checkClosed);
+                window.removeEventListener('message', handleMessage);
+                reject(new Error('Popup closed'));
+              }
+            }, 500);
+
+            window.addEventListener('message', handleMessage);
+          });
+
+          // 재인증 성공 후 삭제 재시도
+          if (auth.currentUser) {
+            await deleteUser(auth.currentUser);
+            localStorage.removeItem(`br_data_${currentUserId}`);
+          }
         } catch (reauthError) {
           console.error("Re-authentication failed:", reauthError);
         }

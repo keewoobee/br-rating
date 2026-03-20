@@ -128,7 +128,7 @@ export const NameInput: React.FC<NameInputProps> = ({ onSubmit, onCancel, onDele
               </button>
               <button
                 type="button"
-                onClick={onDelete}
+                onClick={() => { setShowDeleteConfirm(false); onDelete?.(); }}
                 className="flex-1 py-3 text-sm font-bold bg-red-500 text-white rounded-2xl hover:bg-red-600 transition-colors"
               >
                 탈퇴하기
