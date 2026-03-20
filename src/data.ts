@@ -3607,5 +3607,333 @@ export const menuData: MenuItem[] = [
     "englishName": "GOLD MEDAL RIBBON",
     "description": "2018년 평창 동계올림픽 기념 재출시. 초콜릿·바닐라 아이스크림에 캐러멜 시럽 리본.",
     "components": ["초콜릿", "바닐라", "캐러멜"]
+  },
+  {
+    "id": 501,
+    "name": "잔망 딸기",
+    "tags": [],
+    "imageUrl": "/images/잔망 딸기.webp",
+    "description": "",
+    "components": []
+  },
+  {
+    "id": 502,
+    "name": "ㅋㅋㅋ",
+    "tags": [],
+    "imageUrl": "/images/ㅋㅋㅋ.webp",
+    "description": "",
+    "components": []
+  },
+  {
+    "id": 503,
+    "name": "매시업스 후루트링",
+    "tags": [],
+    "imageUrl": "/images/매시업스 후루트링.webp",
+    "description": "",
+    "components": []
+  },
+  {
+    "id": 504,
+    "name": "아이스 팥빙수",
+    "tags": [],
+    "imageUrl": "/images/아이스 팥빙수.webp",
+    "description": "",
+    "components": []
+  },
+  {
+    "id": 505,
+    "name": "럭키 캐러멜 터틀",
+    "tags": [],
+    "imageUrl": "/images/럭키 캐러멜 터틀.png",
+    "description": "",
+    "components": []
+  },
+  {
+    "id": 506,
+    "name": "도리도리 팽도리",
+    "tags": [],
+    "imageUrl": "/images/도리도리 팽도리.png",
+    "description": "",
+    "components": []
+  },
+  {
+    "id": 507,
+    "name": "밀크 앤 치즈쿠키",
+    "tags": [],
+    "imageUrl": "/images/밀크 앤 치즈쿠키.png",
+    "description": "",
+    "components": []
+  },
+  {
+    "id": 508,
+    "name": "캠핑 앤 스모어",
+    "tags": [],
+    "imageUrl": "/images/캠핑 앤 스모어.png",
+    "description": "",
+    "components": []
+  },
+  {
+    "id": 509,
+    "name": "우연한 딸기",
+    "tags": [],
+    "imageUrl": "/images/우연한 딸기.png",
+    "description": "",
+    "components": []
+  },
+  {
+    "id": 510,
+    "name": "망고탱고",
+    "tags": [],
+    "imageUrl": "/images/망고탱고.jpg",
+    "description": "",
+    "components": []
+  },
+  {
+    "id": 511,
+    "name": "바나나 쥬빌레",
+    "tags": [],
+    "imageUrl": "/images/바나나 쥬빌레.jpg",
+    "description": "",
+    "components": []
+  },
+  {
+    "id": 512,
+    "name": "피치 요거트",
+    "tags": [],
+    "imageUrl": "/images/피치 요거트.png",
+    "description": "",
+    "components": []
+  },
+  {
+    "id": 513,
+    "name": "나주배 소르베",
+    "tags": [],
+    "imageUrl": "/images/나주배 소르베.png",
+    "description": "",
+    "components": []
+  },
+  {
+    "id": 514,
+    "name": "블루베리 파나코타",
+    "tags": [],
+    "imageUrl": "/images/블루베리 파나코타.png",
+    "description": "",
+    "components": []
+  },
+  {
+    "id": 516,
+    "name": "마녀의 칵테일 파티(마법사의 할로윈)",
+    "tags": [],
+    "imageUrl": "/images/마녀의 칵테일 파티(마법사의 할로윈).jpg",
+    "description": "",
+    "components": []
+  },
+  {
+    "id": 517,
+    "name": "매드 어바웃 초콜릿",
+    "tags": [],
+    "imageUrl": "/images/매드 어바웃 초콜릿.png",
+    "description": "",
+    "components": []
+  },
+  {
+    "id": 518,
+    "name": "고스트 월드",
+    "tags": [],
+    "imageUrl": "/images/고스트 월드.gif",
+    "description": "",
+    "components": []
+  },
+  {
+    "id": 519,
+    "name": "에스프레소 앤 크림",
+    "tags": [],
+    "imageUrl": "/images/에스프레소 앤 크림.png",
+    "description": "",
+    "components": []
+  },
+  {
+    "id": 520,
+    "name": "워싱턴 블루베리 쥬빌레",
+    "tags": [],
+    "imageUrl": "/images/워싱턴 블루베리 쥬빌레.png",
+    "description": "",
+    "components": []
+  },
+  {
+    "id": 521,
+    "name": "리콜라 레몬민트 샤베트",
+    "tags": [],
+    "imageUrl": "/images/리콜라 레몬민트 샤베트.jpeg",
+    "description": "",
+    "components": []
+  },
+  {
+    "id": 522,
+    "name": "블랙 할로윈",
+    "tags": [],
+    "imageUrl": "/images/블랙 할로윈.png",
+    "description": "",
+    "components": []
+  },
+  {
+    "id": 523,
+    "name": "쿠키홀릭 산타",
+    "tags": [],
+    "imageUrl": "/images/쿠키홀릭 산타.png",
+    "description": "",
+    "components": []
+  },
+  {
+    "id": 524,
+    "name": "트윈베리 요거트",
+    "tags": [],
+    "imageUrl": "/images/트윈베리 요거트.png",
+    "description": "",
+    "components": []
+  },
+  {
+    "id": 526,
+    "name": "오렌지 샤베트",
+    "tags": [],
+    "imageUrl": "/images/오렌지 샤베트.png",
+    "description": "",
+    "components": []
+  },
+  {
+    "id": 527,
+    "name": "아이스 스페셜 K",
+    "tags": [],
+    "imageUrl": "/images/아이스 스페셜 K.png",
+    "description": "",
+    "components": []
+  },
+  {
+    "id": 529,
+    "name": "오레오 쿠키 앤 민트",
+    "tags": [],
+    "imageUrl": "/images/오레오 쿠키 앤 민트.png",
+    "description": "",
+    "components": []
+  },
+  {
+    "id": 530,
+    "name": "오레오 쿠키 앤 밀크",
+    "tags": [],
+    "imageUrl": "/images/오레오 쿠키 앤 밀크.png",
+    "description": "",
+    "components": []
+  },
+  {
+    "id": 531,
+    "name": "초콜릿칩",
+    "tags": [],
+    "imageUrl": "/images/초콜릿칩.jpg",
+    "description": "",
+    "components": []
+  },
+  {
+    "id": 533,
+    "name": "피나 콜라다",
+    "tags": [],
+    "imageUrl": "/images/피나콜라다.png",
+    "description": "",
+    "components": []
+  },
+  {
+    "id": 534,
+    "name": "레드 라즈베리 소르베",
+    "tags": [],
+    "imageUrl": "/images/레드 라즈베리 소르베.png",
+    "description": "",
+    "components": []
+  },
+  {
+    "id": 535,
+    "name": "카라멜 리본",
+    "tags": [],
+    "imageUrl": "/images/카라멜 리본.jpg",
+    "description": "",
+    "components": []
+  },
+  {
+    "id": 536,
+    "name": "수퍼 썬데",
+    "tags": [],
+    "imageUrl": "/images/수퍼 썬데.png",
+    "description": "",
+    "components": []
+  },
+  {
+    "id": 537,
+    "name": "바닐라 아몬드 크런치",
+    "tags": [],
+    "imageUrl": "/images/바닐라 아몬드 크런치.png",
+    "description": "",
+    "components": []
+  },
+  {
+    "id": 538,
+    "name": "페퍼민트 훠지리본",
+    "tags": [],
+    "imageUrl": "/images/페퍼민트 훠지리본.jpg",
+    "description": "",
+    "components": []
+  },
+  {
+    "id": 539,
+    "name": "쿠키 앤 그린티",
+    "tags": [],
+    "imageUrl": "/images/쿠키 앤 그린티.jpeg",
+    "description": "",
+    "components": []
+  },
+  {
+    "id": 540,
+    "name": "나와라! 꼬부기",
+    "tags": [],
+    "imageUrl": "/images/나와라! 꼬부기.png",
+    "description": "",
+    "components": []
+  },
+  {
+    "id": 541,
+    "name": "치코치코 치코리타",
+    "tags": [],
+    "imageUrl": "/images/치코치코 치코리타.png",
+    "description": "",
+    "components": []
+  },
+  {
+    "id": 542,
+    "name": "뮤! 넌 내 거야",
+    "tags": [],
+    "imageUrl": "/images/뮤! 넌 내 거야.jpeg",
+    "description": "",
+    "components": []
+  },
+  {
+    "id": 543,
+    "name": "사과나라 헬로키티",
+    "tags": [],
+    "imageUrl": "/images/사과나라 헬로키티.png",
+    "description": "",
+    "components": []
+  },
+  {
+    "id": 544,
+    "name": "청포도 샤베트",
+    "tags": [],
+    "imageUrl": "/images/청포도 샤베트.png",
+    "description": "",
+    "components": []
+  },
+  {
+    "id": 545,
+    "name": "박카스향 소르베",
+    "tags": [],
+    "imageUrl": "/images/박카스향 소르베.png",
+    "description": "",
+    "components": []
   }
 ];
