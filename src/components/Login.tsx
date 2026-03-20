@@ -10,8 +10,12 @@ interface LoginProps {
 export const Login: React.FC<LoginProps> = ({ onLogin }) => {
   const [error, setError] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(false);
+  const [isEmbedded, setIsEmbedded] = useState(false);
 
   React.useEffect(() => {
+    const ua = navigator.userAgent || navigator.vendor || (window as any).opera;
+    setIsEmbedded(/KAKAOTALK|FBAN|FBAV|Instagram|Line/i.test(ua));
+
     // Handle redirect-based OAuth (for embedded browsers like KakaoTalk)
     const stored = sessionStorage.getItem('oauth_payload');
     if (stored) {
@@ -34,40 +38,33 @@ export const Login: React.FC<LoginProps> = ({ onLogin }) => {
     }
   }, []);
 
+  const openInExternalBrowser = () => {
+    const pageUrl = window.location.href;
+    const ua = navigator.userAgent || '';
+    const isAndroid = /Android/i.test(ua);
+    const isIOS = /iPhone|iPad|iPod/i.test(ua);
+
+    if (isAndroid) {
+      const urlObj = new URL(pageUrl);
+      const intentUrl = `intent://${urlObj.host}${urlObj.pathname}${urlObj.search}#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=${encodeURIComponent(pageUrl)};end`;
+      window.location.href = intentUrl;
+    } else if (isIOS) {
+      const chromeUrl = pageUrl.replace(/^https:\/\//, 'googlechromes://');
+      window.location.href = chromeUrl;
+      setTimeout(() => { window.location.href = pageUrl; }, 1500);
+    } else {
+      window.location.href = pageUrl;
+    }
+  };
+
   const handleSocialLogin = async () => {
     try {
       setIsLoading(true);
       setError(null);
 
-      const userAgent = navigator.userAgent || navigator.vendor || (window as any).opera;
-      const isEmbeddedBrowser = /KAKAOTALK|FBAN|FBAV|Instagram|Line/i.test(userAgent);
-
       // Get OAuth URL from server
       const res = await fetch('/api/auth/google/url');
       const { url } = await res.json();
-
-      if (isEmbeddedBrowser) {
-        // Google blocks OAuth in WebViews (disallowed_useragent).
-        // Force open in a real browser using platform-specific deep links.
-        const isAndroid = /Android/i.test(userAgent);
-        const isIOS = /iPhone|iPad|iPod/i.test(userAgent);
-
-        if (isAndroid) {
-          // Open in Chrome on Android via Intent URL
-          const urlObj = new URL(url);
-          const intentUrl = `intent://${urlObj.host}${urlObj.pathname}${urlObj.search}#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=${encodeURIComponent(url)};end`;
-          window.location.href = intentUrl;
-        } else if (isIOS) {
-          // Open in Chrome on iOS; falls back to Safari if Chrome not installed
-          const chromeUrl = url.replace(/^https:\/\//, 'googlechromes://');
-          window.location.href = chromeUrl;
-          // Fallback to Safari after short delay if Chrome didn't open
-          setTimeout(() => { window.location.href = url; }, 1500);
-        } else {
-          window.location.href = url;
-        }
-        return;
-      }
 
       // Open popup to localhost OAuth endpoint (avoids firebaseapp.com block)
       const popup = window.open(url, 'google-auth', 'width=500,height=600');
@@ -79,7 +76,6 @@ export const Login: React.FC<LoginProps> = ({ onLogin }) => {
 
         const { payload } = event.data;
         if (payload?.idToken) {
-          // Use Google ID token to sign into Firebase Auth
           const credential = GoogleAuthProvider.credential(payload.idToken);
           await signInWithCredential(auth, credential);
         }
@@ -114,19 +110,33 @@ export const Login: React.FC<LoginProps> = ({ onLogin }) => {
         </div>
 
         <div className="space-y-4">
-          <button
-            onClick={handleSocialLogin}
-            disabled={isLoading}
-            className="w-full flex items-center justify-center gap-3 bg-white border-2 border-gray-100 hover:border-br-pink/30 hover:bg-gray-50 text-gray-700 font-bold py-4 px-6 rounded-2xl transition-all group disabled:opacity-50"
-          >
-            <svg className="w-5 h-5" viewBox="0 0 24 24">
-              <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
-              <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
-              <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" />
-              <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" />
-            </svg>
-            Google 계정으로 로그인
-          </button>
+          {isEmbedded ? (
+            <button
+              onClick={openInExternalBrowser}
+              className="w-full flex items-center justify-center gap-3 bg-white border-2 border-gray-100 hover:border-br-pink/30 hover:bg-gray-50 text-gray-700 font-bold py-4 px-6 rounded-2xl transition-all"
+            >
+              <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="2" y1="12" x2="22" y2="12"/>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+              </svg>
+              Chrome으로 열어서 로그인
+            </button>
+          ) : (
+            <button
+              onClick={handleSocialLogin}
+              disabled={isLoading}
+              className="w-full flex items-center justify-center gap-3 bg-white border-2 border-gray-100 hover:border-br-pink/30 hover:bg-gray-50 text-gray-700 font-bold py-4 px-6 rounded-2xl transition-all group disabled:opacity-50"
+            >
+              <svg className="w-5 h-5" viewBox="0 0 24 24">
+                <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
+                <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
+                <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" />
+                <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" />
+              </svg>
+              Google 계정으로 로그인
+            </button>
+          )}
         </div>
 
         {error && (
