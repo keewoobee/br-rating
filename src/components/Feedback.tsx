@@ -33,13 +33,12 @@ export const Feedback: React.FC = () => {
 
   return (
     <div className="bg-white p-4 rounded-2xl shadow-sm border border-gray-100">
-      <h3 className="text-sm font-bold text-gray-800 mb-3">베타 테스트 피드백</h3>
       <form onSubmit={handleSubmit} className="flex gap-2">
         <input
           type="text"
           value={feedback}
           onChange={(e) => setFeedback(e.target.value)}
-          placeholder="개발자에게 메시지를 남겨주세요!"
+          placeholder="맛 추가 요청이나 기능 의견을 남겨주세요!"
           className="flex-1 text-sm p-2 bg-gray-50 border border-gray-100 rounded-xl focus:outline-none focus:border-br-pink"
         />
         <button
