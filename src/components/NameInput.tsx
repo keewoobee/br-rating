@@ -16,6 +16,7 @@ const EMOJIS = ['🐶', '🐱', '🐭', '🐹', '🐰', '🦊', '🐻', '🐼', 
 export const NameInput: React.FC<NameInputProps> = ({ onSubmit, onCancel, onDelete, onLogout, initialName, initialAvatar, error }) => {
   const [name, setName] = useState(onCancel ? (initialName || '') : '');
   const [avatar, setAvatar] = useState(initialAvatar || '🐶');
+  const [showDeleteConfirm, setShowDeleteConfirm] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -102,7 +103,7 @@ export const NameInput: React.FC<NameInputProps> = ({ onSubmit, onCancel, onDele
               <hr className="border-gray-100" />
               <button
                 type="button"
-                onClick={onDelete}
+                onClick={() => setShowDeleteConfirm(true)}
                 className="w-full text-xs text-gray-500 hover:text-red-500 transition-colors py-2"
               >
                 계정 탈퇴하기
@@ -111,6 +112,32 @@ export const NameInput: React.FC<NameInputProps> = ({ onSubmit, onCancel, onDele
           )}
         </div>
       </div>
+
+      {showDeleteConfirm && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-6 bg-black/40 backdrop-blur-sm">
+          <div className="bg-white rounded-3xl p-6 w-full max-w-xs text-center shadow-2xl">
+            <p className="text-base font-black text-gray-900 mb-2">정말 탈퇴하시겠어요?</p>
+            <p className="text-sm text-gray-500 mb-6 leading-relaxed">모든 평가 데이터가 영구 삭제되며<br/>복구할 수 없습니다.</p>
+            <div className="flex gap-2">
+              <button
+                type="button"
+                onClick={() => setShowDeleteConfirm(false)}
+                className="flex-1 py-3 text-sm font-bold bg-gray-100 text-gray-600 rounded-2xl hover:bg-gray-200 transition-colors"
+              >
+                취소
+              </button>
+              <button
+                type="button"
+                onClick={onDelete}
+                className="flex-1 py-3 text-sm font-bold bg-red-500 text-white rounded-2xl hover:bg-red-600 transition-colors"
+              >
+                탈퇴하기
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
     </div>
   );
 };

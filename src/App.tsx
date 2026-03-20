@@ -26,11 +26,13 @@ function getJosa(name: string) {
   return '가';
 }
 
+const DEV_MODE = import.meta.env.DEV && new URLSearchParams(window.location.search).get('dev') === '1';
+
 export default function App() {
-  const [userId, setUserId] = useState<string | null>(null);
-  const [userName, setUserName] = useState<string | null>(null);
-  const [userAvatar, setUserAvatar] = useState<string | null>(null);
-  const [isProfileSetupComplete, setIsProfileSetupComplete] = useState(false);
+  const [userId, setUserId] = useState<string | null>(DEV_MODE ? 'dev_user' : null);
+  const [userName, setUserName] = useState<string | null>(DEV_MODE ? '테스트유저' : null);
+  const [userAvatar, setUserAvatar] = useState<string | null>(DEV_MODE ? '🍦' : null);
+  const [isProfileSetupComplete, setIsProfileSetupComplete] = useState(DEV_MODE);
   const [ratings, setRatings] = useState<Record<number, number>>({});
   const [comments, setComments] = useState<Record<number, string>>({});
   const [favorites, setFavorites] = useState<string[]>([]);
@@ -44,14 +46,16 @@ export default function App() {
   const [socialHasFriendSelected, setSocialHasFriendSelected] = useState(false);
   const clearSelectedFriendRef = useRef<(() => void) | null>(null);
   const [isTierModalOpen, setIsTierModalOpen] = useState(false);
-  const [isAuthReady, setIsAuthReady] = useState(false);
+  const [isAuthReady, setIsAuthReady] = useState(DEV_MODE);
   const [isEditingProfile, setIsEditingProfile] = useState(false);
   const [isFeedbackOpen, setIsFeedbackOpen] = useState(false);
   const [profileError, setProfileError] = useState<string | null>(null);
   const [selectedItem, setSelectedItem] = useState<MenuItem | null>(null);
+  const [showTapHint, setShowTapHint] = useState(() => !localStorage.getItem('br_tap_hint_seen'));
   
   // Firebase Auth initialization
   useEffect(() => {
+    if (DEV_MODE) return;
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       if (user) {
         setUserId(user.uid);
@@ -87,13 +91,11 @@ export default function App() {
 
   // Listen for real-time updates to user data
   useEffect(() => {
-    if (!userId || !isProfileSetupComplete || userId === 'local_user_01') return;
+    if (!userId || !isProfileSetupComplete || userId === 'local_user_01' || DEV_MODE) return;
 
     const unsubscribe = onSnapshot(doc(db, 'users', userId), (doc) => {
       if (doc.exists()) {
         const data = doc.data();
-        console.log("Firestore update received:", data);
-        
         // 데이터가 실제로 변경되었을 때만 상태 업데이트
         if (data.name) setUserName(prev => prev === data.name ? prev : data.name);
         if (data.avatar) setUserAvatar(prev => prev === data.avatar ? prev : data.avatar);
@@ -122,8 +124,6 @@ export default function App() {
           favorites: data.favorites || cachedData.favorites,
           updatedAt: new Date().toISOString()
         }));
-      } else {
-        console.log("Firestore document does not exist for user:", userId);
       }
     }, (error) => {
       console.error("Error listening to user data:", error);
@@ -160,8 +160,6 @@ export default function App() {
       return;
     }
 
-    console.log("saveUserData called with:", { newRatings, newComments, newFavorites });
-
     // 1. Save to Firestore
     try {
       await setDoc(doc(db, 'users', userId), {
@@ -172,7 +170,6 @@ export default function App() {
         favorites: newFavorites,
         updatedAt: serverTimestamp()
       }, { merge: true });
-      console.log("User data saved to Firestore successfully");
     } catch (error) {
       handleFirestoreError(error, 'write', `users/${userId}`);
     }
@@ -187,7 +184,6 @@ export default function App() {
       updatedAt: new Date().toISOString()
     };
     localStorage.setItem(`br_data_${userId}`, JSON.stringify(localData));
-    console.log("User data saved to LocalStorage");
   };
 
   const handleToggleFavorite = (friendId: string) => {
@@ -207,26 +203,21 @@ export default function App() {
   };
 
   const handleRatingChange = (id: number, rating: number) => {
-    console.log("handleRatingChange called:", id, rating, "current ratings:", ratings);
     const newRatings = { ...ratings, [id]: rating };
-    console.log("newRatings:", newRatings);
     setRatings(newRatings);
     saveUserData(newRatings, comments, favorites);
   };
 
   const handleCommentChange = async (id: number, comment: string) => {
-    console.log("handleCommentChange called:", id, comment);
     const newComments = { ...comments };
     
     if (comment.trim() === '') {
       delete newComments[id];
       if (userId) {
         try {
-          console.log("Deleting comment from Firestore:", id);
           await updateDoc(doc(db, 'users', userId), {
             [`comments.${id}`]: deleteField()
           });
-          console.log("Comment deleted from Firestore");
         } catch (error) {
           handleFirestoreError(error, 'write', `users/${userId}`);
         }
@@ -235,11 +226,9 @@ export default function App() {
       newComments[id] = comment;
       if (userId) {
         try {
-          console.log("Updating comment in Firestore:", id, comment);
           await updateDoc(doc(db, 'users', userId), {
             [`comments.${id}`]: comment
           });
-          console.log("Comment updated in Firestore");
         } catch (error) {
           handleFirestoreError(error, 'write', `users/${userId}`);
         }
@@ -300,7 +289,6 @@ export default function App() {
         favorites: favorites || [],
         updatedAt: serverTimestamp()
       });
-      console.log("Profile saved to Firestore");
     } catch (error) {
       handleFirestoreError(error, 'write', `users/${userId}`);
       setProfileError("프로필 저장 중 오류가 발생했습니다.");
@@ -323,7 +311,6 @@ export default function App() {
     setIsProfileSetupComplete(true);
     setIsEditingProfile(false);
     history.back();
-    console.log("Profile saved to LocalStorage");
   };
 
   const handleDeleteAccount = async () => {
@@ -394,10 +381,6 @@ export default function App() {
     setSocialHasFriendSelected(false);
   };
 
-  const handleCountClick = () => {
-    // No longer needed
-  };
-
   if (!isAuthReady) {
     return <div className="min-h-screen flex items-center justify-center bg-[#F8F9FA]"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-br-pink"></div></div>;
   }
@@ -407,7 +390,6 @@ export default function App() {
   }
 
   const ratedCount = Object.values(ratings).filter(r => (r as number) > 0).length;
-  console.log("App ratings:", JSON.stringify(ratings), "ratedCount:", ratedCount);
   const tier = getTier(ratedCount);
 
   const gridClass = "grid grid-cols-3 gap-3";
@@ -498,10 +480,14 @@ export default function App() {
                   {ratingFilter !== 'unrated' && (
                     <button
                       onClick={() => { setSortOrder(s => s === 'name' ? 'rating' : 'name'); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
-                      className="flex items-center gap-1 px-2.5 py-1.5 rounded-full text-[10px] font-bold bg-gray-100 text-gray-600 hover:bg-br-pink/10 hover:text-br-pink transition-all duration-200 whitespace-nowrap shrink-0"
+                      className={`flex items-center gap-1 px-2.5 py-1.5 rounded-full text-[10px] font-bold transition-all duration-200 whitespace-nowrap shrink-0 ${
+                        sortOrder === 'name'
+                          ? 'bg-br-pink/10 text-br-pink hover:bg-br-pink/20'
+                          : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                      }`}
                     >
                       <ArrowUpDown className="h-3 w-3" />
-                      {sortOrder === 'name' ? '이름순' : '별점순'}
+                      {sortOrder === 'name' ? '별점순으로 보기' : '이름순으로 보기'}
                     </button>
                   )}
                 </div>
@@ -527,6 +513,21 @@ export default function App() {
                       ))}
                     </div>
                   </section>
+                </div>
+              </div>
+            )}
+
+            {/* First-visit tap hint snackbar */}
+            {showTapHint && (
+              <div className="fixed bottom-[7.5rem] left-1/2 -translate-x-1/2 z-50 w-[88%] max-w-sm">
+                <div className="bg-gray-900/90 backdrop-blur-sm text-white flex items-center justify-between gap-3 px-4 py-3 rounded-2xl shadow-lg">
+                  <span className="text-xs font-medium leading-snug">🍦 카드를 탭하면 별점을 줄 수 있어요!</span>
+                  <button
+                    onClick={() => { setShowTapHint(false); localStorage.setItem('br_tap_hint_seen', '1'); }}
+                    className="text-[11px] font-black text-br-pink shrink-0"
+                  >
+                    확인
+                  </button>
                 </div>
               </div>
             )}
