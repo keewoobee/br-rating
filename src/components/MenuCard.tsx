@@ -105,11 +105,11 @@ export const MenuCard: React.FC<MenuCardProps> = ({ item, rating, comment, onRat
           )}
         </h3>
       </div>
-      
+
       {item.englishName && (
         <p className="text-xs text-gray-400 mb-3 font-medium uppercase tracking-wider">{item.englishName}</p>
       )}
-      
+
       <div className="flex flex-col gap-1.5 mb-4">
         {originalTags.length > 0 && (
           <div className="flex flex-wrap gap-1.5">
@@ -136,7 +136,7 @@ export const MenuCard: React.FC<MenuCardProps> = ({ item, rating, comment, onRat
       )}
 
       <div className="flex-grow"></div>
-      
+
       <div className="flex items-center justify-center mt-auto pt-4 border-t-2 border-gray-50 relative">
         <StarRating rating={rating} onChange={(newRating) => {
           onRatingChange(item.id, newRating);
@@ -145,7 +145,7 @@ export const MenuCard: React.FC<MenuCardProps> = ({ item, rating, comment, onRat
           }
         }} size="md" />
         {rating > 0 && (
-          <button 
+          <button
             type="button"
             onClick={(e) => {
               e.stopPropagation();

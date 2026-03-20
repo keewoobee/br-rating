@@ -110,6 +110,15 @@ export const SocialStats: React.FC<SocialStatsProps> = ({
     onSelectedFriendChange?.(friend);
   };
   const [selectedFlavor, setSelectedFlavor] = useState<MenuItem | null>(null);
+
+  useEffect(() => {
+    if (selectedFlavor) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => { document.body.style.overflow = ''; };
+  }, [selectedFlavor]);
   const [flavorComments, setFlavorComments] = useState<{userId: string, name: string, avatar: string, rating: number, comment: string}[]>([]);
   const [isLoadingComments, setIsLoadingComments] = useState(false);
   const [friendsList, setFriendsList] = useState<FriendType[]>([]);
@@ -795,8 +804,8 @@ export const SocialStats: React.FC<SocialStatsProps> = ({
 
       {/* Flavor Comments Modal */}
       {selectedFlavor && (
-        <div className="fixed inset-0 z-50 flex items-end justify-center pb-16 bg-black/60 backdrop-blur-sm">
-          <div className="bg-[#141414] w-full max-w-[430px] max-h-[80vh] rounded-t-3xl shadow-2xl flex flex-col overflow-hidden border border-white/10">
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 pb-20 bg-black/60 backdrop-blur-sm" onClick={() => setSelectedFlavor(null)}>
+          <div className="bg-[#141414] w-full max-w-[360px] max-h-[80vh] rounded-3xl shadow-2xl flex flex-col overflow-hidden border border-white/10" onClick={(e) => e.stopPropagation()}>
             <div className="p-6 border-b border-white/10 flex items-center justify-between bg-[#1a1a1a]">
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center overflow-hidden">
