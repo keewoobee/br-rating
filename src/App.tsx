@@ -94,6 +94,8 @@ export default function App() {
         console.log("Firestore update received:", data);
         
         // 데이터가 실제로 변경되었을 때만 상태 업데이트
+        if (data.name) setUserName(prev => prev === data.name ? prev : data.name);
+        if (data.avatar) setUserAvatar(prev => prev === data.avatar ? prev : data.avatar);
         setRatings(prev => {
           const newRatings = data.ratings || {};
           return JSON.stringify(prev) === JSON.stringify(newRatings) ? prev : newRatings;
@@ -106,6 +108,19 @@ export default function App() {
           const newFavorites = data.favorites || [];
           return JSON.stringify(prev) === JSON.stringify(newFavorites) ? prev : newFavorites;
         });
+
+        // localStorage도 최신 상태로 동기화 (다음 앱 시작 시 반영)
+        const cached = localStorage.getItem(`br_data_${userId}`);
+        const cachedData = cached ? JSON.parse(cached) : {};
+        localStorage.setItem(`br_data_${userId}`, JSON.stringify({
+          ...cachedData,
+          name: data.name || cachedData.name,
+          avatar: data.avatar || cachedData.avatar,
+          ratings: data.ratings || cachedData.ratings,
+          comments: data.comments || cachedData.comments,
+          favorites: data.favorites || cachedData.favorites,
+          updatedAt: new Date().toISOString()
+        }));
       } else {
         console.log("Firestore document does not exist for user:", userId);
       }
