@@ -47,8 +47,25 @@ export const Login: React.FC<LoginProps> = ({ onLogin }) => {
       const { url } = await res.json();
 
       if (isEmbeddedBrowser) {
-        // Embedded browsers can't use popups — redirect the whole page
-        window.location.href = url;
+        // Google blocks OAuth in WebViews (disallowed_useragent).
+        // Force open in a real browser using platform-specific deep links.
+        const isAndroid = /Android/i.test(userAgent);
+        const isIOS = /iPhone|iPad|iPod/i.test(userAgent);
+
+        if (isAndroid) {
+          // Open in Chrome on Android via Intent URL
+          const urlObj = new URL(url);
+          const intentUrl = `intent://${urlObj.host}${urlObj.pathname}${urlObj.search}#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=${encodeURIComponent(url)};end`;
+          window.location.href = intentUrl;
+        } else if (isIOS) {
+          // Open in Chrome on iOS; falls back to Safari if Chrome not installed
+          const chromeUrl = url.replace(/^https:\/\//, 'googlechromes://');
+          window.location.href = chromeUrl;
+          // Fallback to Safari after short delay if Chrome didn't open
+          setTimeout(() => { window.location.href = url; }, 1500);
+        } else {
+          window.location.href = url;
+        }
         return;
       }
 
