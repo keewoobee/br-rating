@@ -72,18 +72,20 @@ async function startServer() {
         idToken: tokenData.id_token || null,
       };
 
+      const payloadJson = JSON.stringify(payload).replace(/</g, '\\u003c').replace(/>/g, '\\u003e');
       res.send(`
         <html>
           <body>
             <script>
               if (window.opener) {
-                window.opener.postMessage({ type: 'OAUTH_AUTH_SUCCESS', payload: ${JSON.stringify(payload)} }, '*');
+                window.opener.postMessage({ type: 'OAUTH_AUTH_SUCCESS', payload: ${payloadJson} }, '*');
                 window.close();
               } else {
+                sessionStorage.setItem('oauth_payload', '${Buffer.from(JSON.stringify(payload)).toString('base64')}');
                 window.location.href = '/';
               }
             </script>
-            <p>Authentication successful. This window should close automatically.</p>
+            <p>Authentication successful. Redirecting...</p>
           </body>
         </html>
       `);

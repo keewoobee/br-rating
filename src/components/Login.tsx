@@ -10,26 +10,47 @@ interface LoginProps {
 export const Login: React.FC<LoginProps> = ({ onLogin }) => {
   const [error, setError] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(false);
-  const [isEmbedded, setIsEmbedded] = useState(false);
 
   React.useEffect(() => {
-    const userAgent = navigator.userAgent || navigator.vendor || (window as any).opera;
-    const isEmbeddedBrowser = /KAKAOTALK|FBAN|FBAV|Instagram|Line/i.test(userAgent);
-    setIsEmbedded(isEmbeddedBrowser);
+    // Handle redirect-based OAuth (for embedded browsers like KakaoTalk)
+    const stored = sessionStorage.getItem('oauth_payload');
+    if (stored) {
+      sessionStorage.removeItem('oauth_payload');
+      try {
+        const payload = JSON.parse(atob(stored));
+        if (payload?.idToken) {
+          const credential = GoogleAuthProvider.credential(payload.idToken);
+          signInWithCredential(auth, credential).then(() => {
+            onLogin(payload.name || '아이스크림러버', '🍦');
+          }).catch(() => {
+            onLogin(payload.name || '아이스크림러버', '🍦');
+          });
+        } else {
+          onLogin(payload?.name || '아이스크림러버', '🍦');
+        }
+      } catch (e) {
+        console.error('Failed to parse oauth_payload', e);
+      }
+    }
   }, []);
 
   const handleSocialLogin = async () => {
-    if (isEmbedded) {
-      setError('카카오톡/SNS 내장 브라우저에서는 로그인이 제한됩니다. 오른쪽 하단 더보기 버튼을 눌러 "다른 브라우저로 열기"를 선택해주세요.');
-      return;
-    }
     try {
       setIsLoading(true);
       setError(null);
 
+      const userAgent = navigator.userAgent || navigator.vendor || (window as any).opera;
+      const isEmbeddedBrowser = /KAKAOTALK|FBAN|FBAV|Instagram|Line/i.test(userAgent);
+
       // Get OAuth URL from server
       const res = await fetch('/api/auth/google/url');
       const { url } = await res.json();
+
+      if (isEmbeddedBrowser) {
+        // Embedded browsers can't use popups — redirect the whole page
+        window.location.href = url;
+        return;
+      }
 
       // Open popup to localhost OAuth endpoint (avoids firebaseapp.com block)
       const popup = window.open(url, 'google-auth', 'width=500,height=600');
