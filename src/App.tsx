@@ -316,15 +316,16 @@ export default function App() {
   const handleDeleteAccount = async () => {
     if (!userId || !auth.currentUser) return;
 
+    const currentUserId = userId;
     try {
       // 1. Delete Firestore document
-      await deleteDoc(doc(db, 'users', userId));
-      
-      // 2. Delete LocalStorage data
-      localStorage.removeItem(`br_data_${userId}`);
-      
-      // 3. Delete Firebase Auth user
+      await deleteDoc(doc(db, 'users', currentUserId));
+
+      // 2. Delete Firebase Auth user (재인증 필요 시 onAuthStateChanged 발동 전에 로컬 데이터가 살아있어야 함)
       await deleteUser(auth.currentUser);
+
+      // 3. Delete LocalStorage data (Auth 삭제 성공 후 정리)
+      localStorage.removeItem(`br_data_${currentUserId}`);
     } catch (error: any) {
       if (error.code === 'auth/requires-recent-login') {
         try {
