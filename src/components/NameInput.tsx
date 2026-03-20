@@ -11,7 +11,7 @@ interface NameInputProps {
   error?: string | null;
 }
 
-const EMOJIS = ['🐶', '🐱', '🐭', '🐹', '🐰', '🦊', '🐻', '🐼', '🐨', '🐯', '🦁', '🐮', '🐷', '🐸', '🐵', '🐧', '🐥', '🦆', '🦉', '🐙', '🐬', '🐳', '🦭', '🦦', '🦖', '🐢', '🦋', '🌸', '🍀', '🍓', '🧁', '🍦', '🍩', '🍪', '🍭', '🍬', '✨', '🌈', '☀️', '☁️'];
+const EMOJIS = ['🐶', '🐱', '🐭', '🐹', '🐰', '🦊', '🐻', '🐼', '🐨', '🐯', '🦁', '🐮', '🐷', '🐸', '🐵', '🐧', '🐥', '🦆', '🦉', '🐙', '🐬', '🐳', '🦭', '🦦', '🦖', '🐢', '🦋', '🦄', '🐘', '🦒', '🦓', '🦘', '🦔', '🐿', '🦥', '🦫', '🐝', '🦜', '🦩', '🦚', '🐠', '🦑', '🦀', '🐇', '🦌', '🐟', '🐴', '🌸', '🍀', '🍓', '🧁', '🍦', '🍩', '🍪', '🍭', '🍬', '✨', '🌈', '☀️', '☁️'];
 
 export const NameInput: React.FC<NameInputProps> = ({ onSubmit, onCancel, onDelete, onLogout, initialName, initialAvatar, error }) => {
   const [name, setName] = useState(onCancel ? (initialName || '') : '');

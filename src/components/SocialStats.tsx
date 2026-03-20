@@ -449,8 +449,8 @@ export const SocialStats: React.FC<SocialStatsProps> = ({
             <div key={idx} className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
               <div className="px-5 py-3.5 flex items-center justify-between border-b border-gray-100">
                 <div className="flex items-center gap-2">
-                  <span className="text-base">{award.icon}</span>
-                  <span className="text-sm font-bold text-gray-700">{award.title}</span>
+                  <span className="text-sm">{award.icon}</span>
+                  <span className="text-xs font-bold text-gray-700">{award.title}</span>
                 </div>
                 <span className="text-xs font-black text-gray-400 tracking-widest">TOP 3</span>
               </div>
@@ -479,9 +479,9 @@ export const SocialStats: React.FC<SocialStatsProps> = ({
                       <div className="w-7 h-7 rounded-full bg-gray-100 flex items-center justify-center text-sm">
                         {user.avatar}
                       </div>
-                      <span className="text-sm font-semibold text-gray-800">{user.name}</span>
+                      <span className="text-xs font-semibold text-gray-800">{user.name}</span>
                     </div>
-                    <span className="text-sm font-bold text-br-pink">{award.getValue(user)}</span>
+                    <span className="text-xs font-bold text-br-pink">{award.getValue(user)}</span>
                   </button>
                 ))}
               </div>
@@ -495,7 +495,7 @@ export const SocialStats: React.FC<SocialStatsProps> = ({
           {/* Full List with Distribution */}
           <div className="bg-white rounded-3xl shadow-sm border border-gray-100 p-6">
             <div className="flex items-center gap-2 mb-6">
-              <h3 className="text-lg font-black text-br-blue">배스킨라빈스 맛 순위</h3>
+              <h3 className="text-sm font-black text-br-blue">배스킨라빈스 맛 순위</h3>
               <InfoPopover 
                 title="순위 선정 기준"
                 content={
@@ -544,7 +544,7 @@ export const SocialStats: React.FC<SocialStatsProps> = ({
           {/* Polarizing Ranking */}
           <div className="bg-white rounded-3xl shadow-sm border border-gray-100 p-6">
             <div className="flex items-center gap-2 mb-6">
-              <h3 className="text-lg font-black text-br-blue">호불호 순위 (Top 10)</h3>
+              <h3 className="text-sm font-black text-br-blue">호불호 순위 (Top 10)</h3>
               <InfoPopover 
                 title="호불호 순위 기준"
                 content={
@@ -558,7 +558,7 @@ export const SocialStats: React.FC<SocialStatsProps> = ({
             </div>
             <div className="flex flex-col gap-3">
               {globalStats
-                .filter(item => item.globalCount >= 2) // Need at least 2 ratings to calculate variance
+                .filter(item => item.globalCount >= 5) // Need at least 5 ratings to calculate variance
                 .sort((a, b) => b.variance - a.variance)
                 .slice(0, 10)
                 .map((item, idx) => (
@@ -636,10 +636,10 @@ export const SocialStats: React.FC<SocialStatsProps> = ({
                           {friend.avatar}
                         </div>
                         <div>
-                          <h4 className="font-bold text-gray-900 text-lg flex items-center gap-1">
+                          <h4 className="font-bold text-gray-900 text-sm flex items-center gap-1">
                             {friend.id === auth.currentUser?.uid ? `${friend.name} (나)` : friend.name}
                           </h4>
-                          <p className="text-sm text-gray-500">{friend.description}</p>
+                          <p className="text-xs text-gray-500">{friend.description}</p>
                         </div>
                       </button>
                     </div>

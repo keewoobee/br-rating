@@ -363,13 +363,13 @@ export default function App() {
   };
 
   useEffect(() => {
-    const handlePopState = () => {
-      console.log("popstate event triggered", { isTierModalOpen, isEditingProfile, viewingFriend, view, selectedItem, isFeedbackOpen });
+    const handlePopState = (event: PopStateEvent) => {
       if (selectedItem) setSelectedItem(null);
       else if (isFeedbackOpen) setIsFeedbackOpen(false);
       else if (isTierModalOpen) setIsTierModalOpen(false);
       else if (isEditingProfile) setIsEditingProfile(false);
       else if (viewingFriend) { setViewingFriend(null); setView('social'); setSocialHasFriendSelected(false); }
+      else if (event.state?.fromView) { setView(event.state.fromView); setSocialHasFriendSelected(false); }
       else if (view !== 'list') { setView('list'); setSocialHasFriendSelected(false); }
     };
 
@@ -379,14 +379,14 @@ export default function App() {
 
   const handleViewFriendStats = (friend: FriendType) => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
-    history.pushState(null, '');
+    history.pushState({ fromView: view }, '');
     setViewingFriend(friend);
     setView('analytics');
   };
 
   const handleNavClick = (newView: 'list' | 'analytics' | 'social') => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
-    if (newView !== 'list') history.pushState(null, '');
+    if (newView !== 'list') history.pushState({ fromView: view }, '');
     setView(newView);
     setViewingFriend(null);
     setSocialHasFriendSelected(false);
