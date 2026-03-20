@@ -11,10 +11,12 @@ export const Login: React.FC<LoginProps> = ({ onLogin }) => {
   const [error, setError] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(false);
   const [isEmbedded, setIsEmbedded] = useState(false);
+  const [isIOS, setIsIOS] = useState(false);
 
   React.useEffect(() => {
     const ua = navigator.userAgent || navigator.vendor || (window as any).opera;
     setIsEmbedded(/KAKAOTALK|FBAN|FBAV|Instagram|Line/i.test(ua));
+    setIsIOS(/iPhone|iPad|iPod/i.test(ua));
 
     // Handle redirect-based OAuth (for embedded browsers like KakaoTalk)
     const stored = sessionStorage.getItem('oauth_payload');
@@ -42,19 +44,14 @@ export const Login: React.FC<LoginProps> = ({ onLogin }) => {
     const pageUrl = window.location.href;
     const ua = navigator.userAgent || '';
     const isAndroid = /Android/i.test(ua);
-    const isIOS = /iPhone|iPad|iPod/i.test(ua);
 
     if (isAndroid) {
+      // Android: 기본 브라우저(크롬/삼성인터넷 등)로 열기
       const urlObj = new URL(pageUrl);
-      const intentUrl = `intent://${urlObj.host}${urlObj.pathname}${urlObj.search}#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=${encodeURIComponent(pageUrl)};end`;
+      const intentUrl = `intent://${urlObj.host}${urlObj.pathname}${urlObj.search}#Intent;scheme=https;S.browser_fallback_url=${encodeURIComponent(pageUrl)};end`;
       window.location.href = intentUrl;
-    } else if (isIOS) {
-      const chromeUrl = pageUrl.replace(/^https:\/\//, 'googlechromes://');
-      window.location.href = chromeUrl;
-      setTimeout(() => { window.location.href = pageUrl; }, 1500);
-    } else {
-      window.location.href = pageUrl;
     }
+    // iOS는 버튼 대신 안내 문구만 표시 (프로그래밍으로 강제 불가)
   };
 
   const handleSocialLogin = async () => {
@@ -111,17 +108,26 @@ export const Login: React.FC<LoginProps> = ({ onLogin }) => {
 
         <div className="space-y-4">
           {isEmbedded ? (
-            <button
-              onClick={openInExternalBrowser}
-              className="w-full flex items-center justify-center gap-3 bg-white border-2 border-gray-100 hover:border-br-pink/30 hover:bg-gray-50 text-gray-700 font-bold py-4 px-6 rounded-2xl transition-all"
-            >
-              <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <circle cx="12" cy="12" r="10"/>
-                <line x1="2" y1="12" x2="22" y2="12"/>
-                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
-              </svg>
-              Chrome으로 열어서 로그인
-            </button>
+            <>
+              {isIOS ? (
+                <p className="text-sm text-gray-500 font-medium leading-relaxed break-keep px-2">
+                  오른쪽 하단 <strong>···</strong> 버튼을 누르고<br/>
+                  <strong>Safari로 열기</strong>를 선택해주세요.
+                </p>
+              ) : (
+                <button
+                  onClick={openInExternalBrowser}
+                  className="w-full flex items-center justify-center gap-3 bg-white border-2 border-gray-100 hover:border-br-pink/30 hover:bg-gray-50 text-gray-700 font-bold py-4 px-6 rounded-2xl transition-all"
+                >
+                  <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <line x1="2" y1="12" x2="22" y2="12"/>
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                  </svg>
+                  브라우저로 열어서 로그인
+                </button>
+              )}
+            </>
           ) : (
             <button
               onClick={handleSocialLogin}
