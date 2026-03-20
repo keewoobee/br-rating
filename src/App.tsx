@@ -369,7 +369,7 @@ export default function App() {
       else if (isTierModalOpen) setIsTierModalOpen(false);
       else if (isEditingProfile) setIsEditingProfile(false);
       else if (viewingFriend) { setViewingFriend(null); setView('social'); setSocialHasFriendSelected(false); }
-      else if (event.state?.fromView) { setView(event.state.fromView); setSocialHasFriendSelected(false); }
+      else if (event.state?.view) { setView(event.state.view); setSocialHasFriendSelected(false); }
       else if (view !== 'list') { setView('list'); setSocialHasFriendSelected(false); }
     };
 
@@ -379,14 +379,14 @@ export default function App() {
 
   const handleViewFriendStats = (friend: FriendType) => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
-    history.pushState({ fromView: view }, '');
+    history.pushState({ view: 'analytics' }, '');
     setViewingFriend(friend);
     setView('analytics');
   };
 
   const handleNavClick = (newView: 'list' | 'analytics' | 'social') => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
-    if (newView !== 'list') history.pushState({ fromView: view }, '');
+    if (newView !== 'list') history.pushState({ view: newView }, '');
     setView(newView);
     setViewingFriend(null);
     setSocialHasFriendSelected(false);
